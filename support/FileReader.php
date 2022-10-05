@@ -2,7 +2,7 @@
 
 class FileReader
 {
-    public static function readJsonFile($path, $asArray = false): array
+    public static function readJsonFile($path, $asArray = false): array|bool
     {
         if (!file_exists($path)) {
             return false;
